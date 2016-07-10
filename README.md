@@ -1,7 +1,7 @@
 # SimuCUBE firmware
-This is a Firmware for [SimuCUBE](http://granitedevices.com/simucube) hardware. SimuCUBE is a [IONI drive](http://granitedevices.com/miniature-servo-drive-ioni/) based motor control board where a single AC/DC/BLDC/Stepper motor may be controlled over USB and with the help of on-board STM32F4 microcontroller. 
+This is a Firmware for [SimuCUBE](http://granitedevices.com/simucube) hardware. SimuCUBE is a [IONI drive](http://granitedevices.com/miniature-servo-drive-ioni/) based motor control board where a single AC/DC/BLDC/Stepper motor may be controlled over USB and with the help of on-board STM32F4 microcontroller.
 
-This firmware attempts to implement racing game steering wheel controller on a SimuCUBE embedded processor. To see latest development version, check out the brankch named "develop" instead of "master".
+This firmware attempts to implement racing game steering wheel controller on a SimuCUBE embedded processor. To see latest development version, check out the branch named "develop" instead of "master".
 
 ## STATUS
 The current status of firmware is a "test environment" without actual meaningful functionality.
@@ -16,7 +16,7 @@ A GCC compiler toolchain for ARM is needed to compile the source code. Get GCC A
 
 b) GNU Make
 
-Source code of firmware and makefirmware utily is easily compiled by `make` command. For that, the GNU make must be installed in system. 
+Source code of firmware and makefirmware utility is easily compiled by `make` command. For that, the GNU make must be installed in system.
 
 For Windows system, an easy way to obtain make is to install "msys-base" and "msys-make" packages from MinGW Installation Manager. MinGW site: http://www.mingw.org/ Download the installation manager at: http://sourceforge.net/projects/mingw/files/Installer/ . You may also add MSys binaries to system environment variable called PATH to have make command to work from command prompt without typing full executable path every time. If the default folder was used, make.exe is located at: C:\MinGW\msys\1.0\bin.
 
@@ -38,7 +38,7 @@ For Windows system, an easy way to obtain make is to install "msys-base" and "ms
     text    data     bss     dec     hex filename
     48936     548    5296   54780    d5fc simucube.elf
 
-If so, then just simucube.bin/.elf is the binary file going to SimuCUBE STM32F4 MCU. 
+If so, then just simucube.bin/.elf is the binary file going to SimuCUBE STM32F4 MCU.
 
 ##INSTALLING FIRMWARE
 
@@ -46,7 +46,7 @@ The binary may be loaded to SimuCUBE with two methods:
 
 1) By uploading through USB in DFU (Device Firmware Upgrade) mode: http://granitedevices.com/wiki/Installing_SimuCUBE_firmware
 
-2) By using debugger device (such as comaptible JTAG or SWD interfaces like Segger J-Link or ST-LINK/V2). For development purposes, getting for example a [J-Link EDU](https://www.segger.com/j-link-edu.html) and setting up a [GDB based debug enfironment in Eclipse](https://www.segger.com/IDE_Integration_Eclipse.html) might pay back very fast in saved development time.
+2) By using debugger device (such as compatible JTAG or SWD interfaces like Segger J-Link or ST-LINK/V2). For development purposes, getting for example a [J-Link EDU](https://www.segger.com/j-link-edu.html) and setting up a [GDB based debug environment in Eclipse](https://www.segger.com/IDE_Integration_Eclipse.html) might pay back very fast in saved development time.
 
 ## LICENSE
 This project has been licensed with Apache license version 2.0. For full details, see http://www.apache.org/licenses/LICENSE-2.0.
